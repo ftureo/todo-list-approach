@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>TO DO list</title>
+    </head>
+    <body>
+        <section id="todo-list-container">
+            <form id="todo-form">
+                <input
+                    type="text"
+                    id="task-title"
+                    placeholder="Título de la tarea"
+                    required
+                />
+                <textarea
+                    id="task-desc"
+                    placeholder="Descripción de la tarea"
+                ></textarea>
+                <button type="submit">Add task</button>
+            </form>
+            <ul id="todo-list"></ul>
+            <button id="clear-all">Clear All Tasks</button>
+        </section>
+
+        <script src="./scripts/todolist.js"></script>
+    </body>
+</html>
